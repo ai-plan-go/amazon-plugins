@@ -1,0 +1,35 @@
+{
+  "name": "amazon-listing-crawler",
+  "version": "0.1.0",
+  "description": "Reliably crawl Amazon.com Listing pages with a persistent US browser context and diagnostic evidence.",
+  "author": {
+    "name": "ai-plan-go",
+    "url": "https://github.com/ai-plan-go"
+  },
+  "homepage": "https://github.com/ai-plan-go/amazon-plugins",
+  "repository": "https://github.com/ai-plan-go/amazon-plugins",
+  "keywords": [
+    "amazon",
+    "listing",
+    "crawler",
+    "playwright"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Amazon Listing Crawler",
+    "shortDescription": "Crawl Amazon US Listings with persistent sessions",
+    "longDescription": "Collect structured Amazon.com product data by ASIN or URL using Chrome, a persistent US browser context, challenge diagnostics, raw HTML, and screenshot evidence.",
+    "developerName": "ai-plan-go",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/ai-plan-go/amazon-plugins",
+    "defaultPrompt": [
+      "Crawl this Amazon US ASIN and save structured evidence.",
+      "Diagnose why this Amazon Listing crawl is blocked.",
+      "Extract title, price, availability, rating, and bullets from this Listing."
+    ]
+  }
+}

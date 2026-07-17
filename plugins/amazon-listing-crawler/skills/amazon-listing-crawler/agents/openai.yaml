@@ -1,0 +1,5 @@
+interface:
+  display_name: "Amazon Listing Crawler"
+  short_description: "Reliably crawl Amazon US listings with evidence"
+  default_prompt: "Use $amazon-listing-crawler to crawl an Amazon US listing and save structured evidence."
+
