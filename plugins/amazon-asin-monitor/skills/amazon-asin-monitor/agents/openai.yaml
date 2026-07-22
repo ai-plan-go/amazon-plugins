@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon ASIN Monitor"
+  short_description: "Audit ASIN projects with Excel evidence"
+  default_prompt: "Use $amazon-asin-monitor to run or audit the Amazon ASIN frontend monitor."
