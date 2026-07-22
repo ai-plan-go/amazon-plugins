@@ -81,3 +81,32 @@ The bundled Python script requires Playwright and an installed Chrome browser:
 ```powershell
 python -m pip install playwright
 ```
+
+## Amazon ASIN Monitor
+
+`amazon-asin-monitor` 用于从 Excel 项目清单执行 Amazon ASIN 前台巡检，并生成内嵌截图证据的检查工作簿。
+
+主要能力：
+
+- 按项目顺序执行，当前项目通过质量门禁后才启动下一个项目。
+- 支持项目续跑、父体/子体过滤、分批检查、断点恢复和受控批次并发。
+- 默认按美国邮编 `10043` 独立检查 Add to Cart、Buy Now 和 Buy Box 信号，不从价格推断购物车。
+- 区分类目 breadcrumb 与 Best Sellers Rank 的字段来源。
+- 识别 Prime 会员专享价、Regular Price、Coupon 和多买折扣。
+- 在 Excel 中嵌入星级占比图和价格截图，并输出异常汇总与运行进度日志。
+- 不包含企业微信推送，不创建 Windows Task Scheduler 任务。
+
+安装：
+
+```powershell
+codex plugin marketplace add https://github.com/ai-plan-go/amazon-plugins
+codex plugin add amazon-asin-monitor@amazon-plugins
+```
+
+安装后可在新任务中调用：
+
+```text
+$amazon-asin-monitor 运行全部待检查项目
+```
+
+依赖 Python、Playwright、openpyxl 和 Pillow。生产脚本默认部署到 `D:\Codex\amazon_frontend_check.py`，项目数据位于 `D:\Codex\各项目链接检查`。

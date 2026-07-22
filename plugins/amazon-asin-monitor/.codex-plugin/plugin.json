@@ -1,0 +1,36 @@
+{
+  "name": "amazon-asin-monitor",
+  "version": "0.2.0",
+  "description": "Run auditable Amazon ASIN frontend checks and produce evidence-rich Excel reports.",
+  "author": {
+    "name": "ai-plan-go",
+    "url": "https://github.com/ai-plan-go"
+  },
+  "homepage": "https://github.com/ai-plan-go/amazon-plugins",
+  "repository": "https://github.com/ai-plan-go/amazon-plugins",
+  "keywords": [
+    "amazon",
+    "asin",
+    "monitor",
+    "buy-box",
+    "excel"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Amazon ASIN Monitor",
+    "shortDescription": "Audit Amazon ASINs and produce Excel evidence",
+    "longDescription": "Runs deterministic Amazon.com frontend inspections from project workbooks, checks Buy Box signals, prices, discounts, reviews, breadcrumbs, rankings, and embeds screenshot evidence in Excel reports.",
+    "developerName": "ai-plan-go",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/ai-plan-go/amazon-plugins",
+    "defaultPrompt": [
+      "Run the Amazon ASIN frontend monitor for all pending projects.",
+      "Audit the latest ASIN monitor workbook and report exceptions.",
+      "Deploy the packaged Amazon ASIN monitor to D:\\Codex."
+    ]
+  }
+}

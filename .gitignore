@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 .amazon-listing-crawler/
 amazon-listing-output/
+amazon_monitor.log
+last_run_summary.json
+*_updated_*.xlsx
+plugins/amazon-asin-monitor/output/
