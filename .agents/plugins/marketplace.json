@@ -3,5 +3,18 @@
   "interface": {
     "displayName": "Amazon Plugins"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "amazon-asin-monitor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/amazon-asin-monitor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
 }
