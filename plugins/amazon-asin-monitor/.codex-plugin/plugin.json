@@ -1,0 +1,26 @@
+{
+  "name": "amazon-asin-monitor",
+  "version": "1.2.0",
+  "description": "Deploy, run, schedule, and audit a multi-market Amazon ASIN frontend monitor.",
+  "author": {
+    "name": "ai-plan-go",
+    "url": "https://github.com/ai-plan-go"
+  },
+  "repository": "https://github.com/ai-plan-go/amazon-plugins",
+  "keywords": ["amazon", "asin", "monitor", "buy-box", "ecommerce"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Amazon ASIN Monitor",
+    "shortDescription": "Multi-market Amazon frontend inspection workflow.",
+    "longDescription": "Runs and audits Amazon ASIN frontend checks for US, UK, DE, AU, and FR, including Buy Box, localized prices, variation relationships, rankings, screenshots, and Excel reports.",
+    "developerName": "Amazon Operations Team",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "使用 amazon-asin-monitor 运行 Amazon ASIN 前台巡检。",
+      "使用 amazon-asin-monitor 检查当前脚本和输出是否合规。",
+      "使用 amazon-asin-monitor 部署或升级巡检工作流。"
+    ],
+    "brandColor": "#1F4E78"
+  }
+}
